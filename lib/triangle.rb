@@ -10,6 +10,8 @@ class Triangle
   end
   
   def kind
+    
+    
     if self.side_1 == self.side_2 && self.side_2 == self.side_3
       :equilateral
     elsif self.side_1 == self.side_2 || self.side_1 == self.side_3 || self.side_2 == self.side_3
@@ -17,6 +19,10 @@ class Triangle
     else 
       :scalene
     end
+  end
+  
+  class TriangleError < StandardError
+    
   end
   
 end
