@@ -11,7 +11,7 @@ class Triangle
   
   def kind
     
-    if self.side_1 == 0 || self.side_2 == 0 || self.side_3 == 0
+    if self.side_1 + self.side_2 <= self.side_3
       begin
         raise TriangleError
       rescue TriangleError => error
